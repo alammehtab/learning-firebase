@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Firebase</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div>
+      <input id="new-todo" type="text" placeholder="New Todo..." />
+      <button id="add-todo-button" onclick="addTodo()" class="btn btn-primary">
+        Add Todo
+      </button>
+      <button
+        id="delete-all-button"
+        onclick="deleteAll()"
+        class="btn btn-danger"
+      >
+        Delete All
+      </button>
+      <div id="list"></div>
+    </div>
+
+    <!-- FIREBASE SCRIPTS STARTED -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+
+    <!-- explicitly telling firebase that we are using database service is required -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAL5u22cAG5zss9curs9hSjgB5GCIIpdEk",
+        authDomain: "learning-firebase-f463b.firebaseapp.com",
+        projectId: "learning-firebase-f463b",
+        storageBucket: "learning-firebase-f463b.appspot.com",
+        messagingSenderId: "1008874225221",
+        appId: "1:1008874225221:web:398cddb4afcfdd0fbb2d2c",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- FIREBASE SCRIPTS ENDED -->
+
+    <!-- MY OWN SCRIPT -->
+    <script src="firebase.js"></script>
+  </body>
+</html>
