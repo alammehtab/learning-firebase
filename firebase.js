@@ -17,6 +17,12 @@
 // FOLLOWING FUNCTION WILL REPLACE ALL THE DATA
 // firebase.database().ref('student').set(student)
 
+// SAVING NESTED DATA
+//  FIRST METHOD
+// firebase.database().ref("student").child("student1").set(student);
+//  SECOND METHOD
+// firebase.database().ref("student/student1").set(student);
+
 //MAKING KEY WITH FIREBASE
 // let key=firebase.database().ref().push().key
 
